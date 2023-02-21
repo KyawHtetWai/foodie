@@ -1,2 +1,52 @@
-@import './node_modules/bootstrap/scss';
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import './node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+
+$font-family-sans-serif:'Montserrat', 'sans-serif';
+$primary:#007822;
+$navbar-nav-link-padding-x:1.5rem;
+
+$btn-padding-x:1.5rem;
+$btn-padding-y:0.5rem;
+$border-radius:0.5rem;
+
+
+
+@import 'bootstrap/scss/bootstrap';
+
+p{
+    font-size: 14px !important;
+}
+
+.brand-icon{
+    height: 40px;
+    transition: transform 0.5s;
+}
+
+.navbar:hover .brand-icon{
+    transform: translate(360deg);
+}
+
+.nav-link.active{
+    color: white !important;
+}
+
+.services{
+    svg{
+        fill:$primary
+    }
+}
+
+.card-img{
+    transition: all 0.5s  ease;
+}
+.card{
+    
+    transition: all 0.3s;
+    &:hover{
+        transform: translateY(-10px);
+        box-shadow: $box-shadow;
+    }
+    &:hover .card-img{
+        transform: rotate(45deg);
+    }
+}
